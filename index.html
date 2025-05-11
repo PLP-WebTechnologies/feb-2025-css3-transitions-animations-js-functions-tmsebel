@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <meta name="description" content="A simple daily mood tracker to help you keep track of your feelings.">
+    <meta name="keywords" content="mood tracker, daily mood, feelings, emotions, self-care">
+    <meta name="author" content="Tawana Msebele">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Mood Tracker</h1>
+        
+        <section class="mood-section">
+            <h2 class="mood-title">How are you feeling today?</h2>
+            <div class="mood-cards">
+                <div class="mood-card" data-mood="Happy" style="background-color: #FFC107;">
+                    <span>Happy</span>
+                </div>
+                <div class="mood-card" data-mood="Calm" style="background-color: #03A9F4;">
+                    <span>Calm</span>
+                </div>
+                <div class="mood-card" data-mood="Energetic" style="background-color: #FF5722;">
+                    <span>Energetic</span>
+                </div>
+                <div class="mood-card" data-mood="Tired" style="background-color: #9C27B0;">
+                    <span>Tired</span>
+                </div>
+                <div class="mood-card" data-mood="Focused" style="background-color: #4CAF50;">
+                    <span>Focused</span>
+                </div>
+                <div class="mood-card" data-mood="Stressed" style="background-color: #F44336;">
+                    <span>Stressed</span>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="save-btn">Save Today's Mood</button>
+            </div>
+        </section>
+        
+        <section class="history-section">
+            <h2 class="history-title">Your Mood History</h2>
+            <div class="mood-history">
+                <!-- History items will be inserted here -->
+                <div class="no-history">No mood history yet. Select a mood above to get started!</div>
+            </div>
+            <div class="btn-container">
+                <button class="clear-btn" style="display: none;">Clear History</button>
+            </div>
+        </section>
+    </div>
+    
+    <div class="success-message">Mood saved successfully!</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
